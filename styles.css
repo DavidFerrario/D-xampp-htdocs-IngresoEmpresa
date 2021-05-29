@@ -1,0 +1,39 @@
+html{
+
+    font-size: 62.5%; /*reset para REMs -62.5%=10px de 16px */
+
+}
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: orange;
+}
+
+.contenedor{
+
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+.campo{
+
+    max-width: 3.8rem;
+    margin: 0 0 1.6rem 0;
+}
+
+
+
+
+
