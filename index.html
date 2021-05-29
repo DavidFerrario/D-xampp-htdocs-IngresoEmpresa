@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Ejercicio para en ingreso a Ideal Sur </h1>
+
+    <h3>Ejercicio 1</h3>
+
+    <form action="" method="post">
+        <p>
+            <label for="numero1">ingrese un numero </label>
+                    <input type="text" id="numero1"><br>
+            <label for="numero2">ingrese otro numero </label>
+                    <input type="text" id="numero2"><br>
+        </p>
+    </form>
+
+    <button onClick="suma()">
+        Enviar
+    </button>
+    <script type="text/javascript" src="scripts.js"></script>
+
+
+    <h3>Ejercicio 2</h3>
+
+    <p>
+        SELECT * FROM usuarios ORDER BY nombre <br>
+
+        SELECT COUNT(*) cantidad_mujeres FROM usuarios WHERE sexo = 'M' <br>
+
+        SELECT DESCRIPCION rol, COUNT(*) cantidad FROM roles JOIN usuarios ON roles.`ROLID`=usuarios.`ROLID` GROUP BY roles.descripcion`roles` <br>
+
+        SELECT sexo, ROUND( SUM(edad)/ COUNT(*), 0) AS cantidad_por_sexo FROM usuarios GROUP BY sexo <br>
+    </p>
+
+    <h3>Ejercicio 3</h3>
+
+    <p>
+        1. Ramón puede comprar una bicicleta en 12 cuotas de 88$ cada una o en un pago único de 780$. 
+        ¿Cuánto ahorra si la compra en un único pago?
+        <br>
+        (12x88)-780= 276
+        respuesta: ahorra 276 pesos.
+        <br><br>
+        2. José escribió los números del 1 al 30. 
+        ¿Cuántas veces escribió el dígito 1?
+        <br>
+        1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21
+        respuesta: escribió el dígito 1 13 veces.
+        <br><br>
+        3. Martín tiene una lata vacía. Si la llena completamente con arena, todo pesa 780 gramos. 
+        Si solo llena con arena la mitad, todo pesa 590 gramos. 
+        ¿Cuánto pesa la lata vacía?
+        <br>
+        Si la lata llena completamente de arena pesa 780 gr y llena solo hasta la mitad pesa 590 gr, entonces 
+        lo que pesa la mitad de la arena es 190 gr, por lo que el 100% de la arena pesa 380 gr, entonces 
+        la lata vacía pesa 780 - 380 = 400 gr 
+
+    </p>
+
+
+
+</body>
+</html>
