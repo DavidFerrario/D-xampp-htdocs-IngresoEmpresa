@@ -34,7 +34,7 @@
 
         SELECT COUNT(*) cantidad_mujeres FROM usuarios WHERE sexo = 'M' <br>
 
-        SELECT DESCRIPCION rol, COUNT(*) cantidad FROM roles JOIN usuarios ON roles.`ROLID`=usuarios.`ROLID` GROUP BY roles.descripcion`roles` <br>
+        SELECT DESCRIPCION rol, COUNT(*) cantidad FROM roles JOIN usuarios ON roles.`ROLID`=usuarios.`ROLID` GROUP BY roles.descripcion<br>
 
         SELECT sexo, ROUND( SUM(edad)/ COUNT(*), 0) AS cantidad_por_sexo FROM usuarios GROUP BY sexo <br>
     </p>
